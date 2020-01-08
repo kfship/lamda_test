@@ -1,4 +1,4 @@
-package com.dev.example;
+package com.dev.example.range;
 
 @FunctionalInterface
 public interface AInterface {

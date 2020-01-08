@@ -13,6 +13,11 @@ class Person {
         return this.name.compareTo(person.name);
     }
 
+    public Person setArbitraryName() {
+        name = "Arbitrary Name";
+        return this;
+    }
+
     //instance method 2
     public int personInstanceMethod2(Person person1, Person person2){
         return person1.name.compareTo(person2.name);
