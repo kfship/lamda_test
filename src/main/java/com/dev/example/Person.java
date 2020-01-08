@@ -18,6 +18,16 @@ class Person {
         return this;
     }
 
+    public Person setName(String name){
+        this.name = name;
+        return this;
+
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
     //instance method 2
     public int personInstanceMethod2(Person person1, Person person2){
         return person1.name.compareTo(person2.name);

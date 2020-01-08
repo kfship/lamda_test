@@ -23,7 +23,15 @@ public class example {
         };
         */
 
-        Function<Person, Person> functionPtr = Person::setArbitraryName;
+        //Function<Person, Person> functionPtr = Person::setName;
+
+        //Reference to an instance moethod of an arbitrary object of a particular type
+
+
+        Function<Person, Person> functionPtrObj = Person::setArbitraryName;
+        //Function<Person, Person> functionPtrObj = (person) -> person.setArbitraryName();
+
+        System.out.println(functionPtrObj.apply(new Person("abc")).getName());
 
     }
 }
