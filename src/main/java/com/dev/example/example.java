@@ -1,13 +1,32 @@
 package com.dev.example;
 import java.util.Arrays;
+import java.util.function.Function;
+
+
 
 public class example {
 
     public static void main(String args[]) {
 
+        ThisExample te = new ThisExample();
+        ThisExample.Inner inner = te.new Inner();
+        inner.method();
+
+
         Person[] personArray = {new Person("A"), new Person("B")};
 
+        /*
+        Function<Person, String> functionPtr = new Function<Person, String>() {
+            @Override
+            public String apply(Person person) {
+                return null;
+            }
+        };
+        */
+
         //Function<Person, int> functionPtr = Person::personInstanceMethod1;
+        //Function<Util, String> functionPtr = x -> x.getInitStr() + "123";
+        //System.out.println(functionPtr.apply(new Util("TEST")));
 
         // Scenario 1 : Getting compiled successfully
         Arrays.sort(personArray, Person::personInstanceMethod1);
