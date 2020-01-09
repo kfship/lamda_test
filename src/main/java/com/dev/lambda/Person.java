@@ -1,4 +1,4 @@
-package com.dev.example;
+package com.dev.lambda;
 
 class Person {
     String name;

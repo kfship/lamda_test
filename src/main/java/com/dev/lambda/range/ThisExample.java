@@ -1,4 +1,4 @@
-package com.dev.example.range;
+package com.dev.lambda.range;
 
 public class ThisExample {
     public int outter = 10;

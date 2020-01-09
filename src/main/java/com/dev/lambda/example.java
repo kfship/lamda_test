@@ -1,9 +1,6 @@
-package com.dev.example;
-import com.dev.example.range.ThisExample;
+package com.dev.lambda;
 
-import java.util.Arrays;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 
 public class example {
